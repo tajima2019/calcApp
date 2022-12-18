@@ -80,6 +80,7 @@ class CalculateWidget(Widget):
 
     def call_method(self, _method_type):
         self.dot = False
+        self.const = False
         if self.method_type != MethodType.No.value:
             return
         if _method_type == MethodType.Plus.value:
